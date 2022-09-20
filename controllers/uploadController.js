@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path")
 const updateService = require("../services/uploadService");
-
+const fileModel = require("../models/files");
 
 exports.get = (req, res, next) => {
 var filename = req.params.filename; 
