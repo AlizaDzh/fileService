@@ -1,5 +1,4 @@
 exports.fileToBuffer = (req, res, next) => {
-  var filename = req.params
   let buff = Buffer.from("");
   req.on("data", (chunk) => {
     buff = Buffer.concat([buff, chunk]);
